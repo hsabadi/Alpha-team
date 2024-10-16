@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>ALPHA TEAM</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%; /* تأكد من أن html و body يغطيان كامل ارتفاع الشاشة */
+            margin: 0; /* إزالة الهوامش الافتراضية */
+        }
+
+        html, body {
+            height: 100%;
+            overflow: auto; /* لمنع ظهور شريط التمرير */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url("https://i.imgur.com/62w5FS2.jpeg");
+            background-size: 1500px; /* أو 'contain' حسب ما تفضله */
+            background-repeat: repeat; /* لتكرار الصورة */
+            background-position: center; /* اجعلها تبدأ من الزاوية العليا اليسرى */
+        }
+
+        header {
+            position: fixed; /* اجعل الرأس ثابتًا */
+            top: 0; /* وضعه في الأعلى */
+            left: 0; /* وضعه في اليسار */
+            width: 100%; /* اجعل العرض 100% */
+            padding: 1.7rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+            z-index: 1000; /* تأكد من أنه فوق العناصر الأخرى */
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-image {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .logo a {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            margin: 2rem 8.5rem;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5rem auto;
+        }
+
+        .main h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #fff;
+            text-align: right;
+            width: 100%;
+        }
+
+        .main h1 {
+            font-family: 'Rubik', sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #fff;
+            text-align: right;
+            width: 100%;
+        }
+
+        .mains h3 {
+            font-family: 'Rubik', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #fff;
+            text-align: right;
+            width: 100%;
+        }
+
+        .mains p {
+            font-family: 'Rubik', sans-serif;
+            font-size: .70rem;
+            font-weight: 300;
+            color: #fff;
+            text-align: right;
+            width: 100%;
+        }
+
+        .main p {
+            margin-top: 1rem;
+            font-size: .20rem;
+            color: #fff;
+            text-align: right;
+            width: 100%;
+        }
+
+        .te p {
+            font-family: 'Rubik', sans-serif; /* استخدام خط Rubik هنا */
+            font-size: 1rem; /* يمكنك تعديل الحجم حسب الحاجة */
+            color: #fff; /* لون النص */
+            text-align: right;
+            width: 100%;
+        }
+
+        .te h1 {
+            font-family: 'Rubik', sans-serif; /* استخدام خط Rubik هنا */
+            font-size: 3.3rem; /* يمكنك تعديل الحجم حسب الحاجة */
+            color: #fff; /* لون النص */
+            text-align: left ; /* محاذاة النص في المنتصف */
+        }
+
+        .social {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.4rem;
+            margin-top: 1.7rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        .social a {
+            color: red;
+            font-size: 1rem;
+            border: 1.6px solid white;
+            border-radius: 50%;
+            padding: .35rem;
+            text-align: center;
+            width: 26px;
+        }
+
+        .social a:hover {
+            color: #1F252E;
+            background-color: red;
+            box-shadow: 0 0 20px;
+            transition: all .3s ease-in-out;
+        }
+
+        @media only screen and (max-width: 480px) {
+    header {
+        padding: 0.7rem 1rem;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    section {
+        margin: 2rem 1rem; /* قلل الهوامش في الأجهزة المحمولة */
+        padding-top: 6rem; /* أو أي قيمة تناسب ارتفاع الرأس */
+    }
+
+    .main h1,
+    .main h2,
+    .mains h3,
+    .mains p,
+    .te p {
+        text-align: right; /* محاذاة النص إلى اليسار */
+    }
+
+    .menu {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #244D61;
+    }
+}
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i.imgur.com/EH7MdX7.png" alt="Logo" class="logo-image">
+            <a href="#">ALPHA TEAM</a>
+        </div>
+       
+        <label for="click" class="mainicon">
+            <div class="menu">
+                <i class="bi bi-list"></i>
+            </div>
+        </label>
+    </header>
+
+    <section>
+        <div class="main">
+            <div class="detail">
+                <h1><span>من هم</span></h1>
+                <h2><span style="color:rgb(255, 255, 255);">ALPHA TEAM</span></h2>
+                <div class="te"><p>هو مبادرة طلابية تهدف إلى إنشاء بيئة تعاونية غير مركزية، حيث يكون لكل عضو دور فعّال. مهمتنا هي تعزيز التعلم والتطوير المهني في مجال تكنولوجيا المعلومات، من خلال ربط الجانب النظري بالتطبيق العملي</p></div>
+            </div>
+        </div>
+<hr>
+<br>
+        <div class="mains">
+            <h3>:اهداف الفريق</h3>
+            <br>
+            <p>التعليم الشامل: نقوم بتنظيم دورات تعليمية عبر الإنترنت وفي الحرم الجامعي، نركز فيها على المواضيع المتقدمة، كما نقدم الإرشاد والدعم لطلاب السنة الأولى لمساعدتهم على فهم أساسيات مجال تكنولوجيا المعلومات.
+                <br> <br> <br>
+                تعاون وبناء شبكة داخلية: نسعى إلى بناء شبكة قوية بين طلاب تكنولوجيا المعلومات، تشجع على العمل الجماعي في المشاريع، وتكوين شركات ناشئة، وتطوير تطبيقات مبتكرة تفتح آفاقاً جديدة للفرص الوظيفية.
+                <br> <br> <br>
+                ربط العراق بالمجتمع العالمي لتكنولوجيا المعلومات: العراق متأخر في مجال تكنولوجيا المعلومات، ويهدف فريق Alpha إلى تغيير هذا الواقع من خلال تمكين بلدنا من أن يكون له دور فعّال في هذا المجال المتسارع. نطمح لأن يكون العراق مشاركًا وليس مجرد متفرج على التطورات التقنية العالمية.
+                <br> <br> <br>
+                لتميز الأكاديمي والمهني: نسعى إلى تغيير الفهم الخاطئ عن تكنولوجيا المعلومات، وإظهار أن المجال أوسع وأعمق من مجرد استخدام برامج مكتبية بسيطة. هدفنا هو تخريج طلاب يمتلكون مهارات عملية في البرمجة، الشبكات، والأمن السيبراني، ليصبحوا محترفين في مجالهم وليسوا فقط حاملين لشهادات.
+            </p>
+        </div>
+
+        <div class="social">
+            <a href="https://t.me/xteam_alpha"><i class="bi bi-telegram"></i></a>
+            <a href="https://www.instagram.com/talpha.dev"><i class="bi bi-instagram"></i></a>
+        </div>
+    </section>
+
+</body>
+
+</html>
